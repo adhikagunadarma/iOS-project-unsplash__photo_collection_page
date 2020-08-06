@@ -27,7 +27,9 @@ class PhotoCollectionViewController: UICollectionViewController {
     }
     
     @IBAction func searchAction(_ sender: UIButton) {
+        
         self.listPhotos = []
+        self.collectionView.reloadData()
         self.showSpinner(onView: self.view)
         self.presenter.getNewPhotos(self.searchTextField.text!)
     }
@@ -46,7 +48,7 @@ class PhotoCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
                                                       for: indexPath) as! PhotoCollectionViewCell
         cell.imageView.sd_imageIndicator = SDWebImageActivityIndicator.gray
-//        cell.imageView.sd_setImage(with: URL(string: self.listPhotos[indexPath.item].getPhoto), placeholderImage : nil)
+        cell.imageView.sd_setImage(with: URL(string: self.listPhotos[indexPath.item].getPhoto), placeholderImage : nil)
         return cell
     }
      
@@ -69,7 +71,7 @@ extension PhotoCollectionViewController : UICollectionViewDelegateFlowLayout{
                 let marginSpace = CGFloat(16)
                 let availableWidth = viewWidth - paddingSpace - marginSpace
                 let widthPerItem = availableWidth / CGFloat(2)
-                let heightPerItem = widthPerItem
+        let heightPerItem = widthPerItem * 1.5
                 return CGSize(width: widthPerItem, height: heightPerItem)
             }
         
@@ -88,6 +90,7 @@ extension PhotoCollectionViewController : UICollectionViewDelegateFlowLayout{
 
 
 extension PhotoCollectionViewController : PresenterPhotoCollection{
+    
     func updateData(_ photos: [PhotoViewModel]) {
         self.removeSpinner()
         self.listPhotos.append(contentsOf: photos)

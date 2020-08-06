@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E31AE888-E606-46E9-AAA3-D358CEF997C0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "unsplash-the-kraken/presenter/PhotoCollectionPresenter.swift"
@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E369FDE3-E5A5-43AF-BE1B-9B1E32021A6A"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "unsplash-the-kraken/presenter/PhotoCollectionPresenter.swift"
@@ -37,7 +37,7 @@
             <Locations>
                <Location
                   uuid = "E369FDE3-E5A5-43AF-BE1B-9B1E32021A6A - 34966622e4b5dc63"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "unsplash_the_kraken.PhotoCollectionPresenter.getPhotos() -&gt; ()"
@@ -52,7 +52,7 @@
                </Location>
                <Location
                   uuid = "E369FDE3-E5A5-43AF-BE1B-9B1E32021A6A - 998b5f540b1edaa8"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in unsplash_the_kraken.PhotoCollectionPresenter.getPhotos() -&gt; ()"
@@ -71,49 +71,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E593D8AB-57FB-41AC-A90A-90DD29B9C424"
-            shouldBeEnabled = "Yes"
+            uuid = "DB29601B-AD3D-4070-AE87-46CE6A359472"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "unsplash-the-kraken/view/PhotoCollectionViewController.swift"
+            filePath = "unsplash-the-kraken/presenter/PhotoCollectionPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "updateData(_:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "getPhotos()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3D6FFFAE-2426-47CD-B7D0-7782286B7F25"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "unsplash-the-kraken/view/PhotoCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "updateData(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5917F70D-3B8D-484A-A85A-EE5A9FC9D2DE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "unsplash-the-kraken/view/PhotoCollectionViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "updateData(_:)"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DB29601B-AD3D-4070-AE87-46CE6A359472 - 34966622e4b5dc63"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "unsplash_the_kraken.PhotoCollectionPresenter.getPhotos() -&gt; ()"
+                  moduleName = "unsplash-the-kraken"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephine/Documents/nitip-dika/xcode-proj/test/unsplash-the-kraken/unsplash-the-kraken/presenter/PhotoCollectionPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1640">
+               </Location>
+               <Location
+                  uuid = "DB29601B-AD3D-4070-AE87-46CE6A359472 - 998b5f540b1edaa8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in unsplash_the_kraken.PhotoCollectionPresenter.getPhotos() -&gt; ()"
+                  moduleName = "unsplash-the-kraken"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/josephine/Documents/nitip-dika/xcode-proj/test/unsplash-the-kraken/unsplash-the-kraken/presenter/PhotoCollectionPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "218">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
