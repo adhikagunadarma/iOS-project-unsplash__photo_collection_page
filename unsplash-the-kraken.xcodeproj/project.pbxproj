@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1221BD1724DAA89800739A71 /* PhotoCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1221BD1624DAA89800739A71 /* PhotoCollectionPresenter.swift */; };
+		1221BD1924DAA8CF00739A71 /* PhotoImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1221BD1824DAA8CF00739A71 /* PhotoImageViewModel.swift */; };
 		127B34F5237FDA77007C7E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B34F4237FDA77007C7E8F /* AppDelegate.swift */; };
 		127B34F7237FDA77007C7E8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B34F6237FDA77007C7E8F /* SceneDelegate.swift */; };
 		127B34FC237FDA77007C7E8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127B34FA237FDA77007C7E8F /* Main.storyboard */; };
@@ -14,10 +16,14 @@
 		127B3501237FDA78007C7E8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127B34FF237FDA78007C7E8F /* LaunchScreen.storyboard */; };
 		127B3509237FDDA5007C7E8F /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B3508237FDDA5007C7E8F /* PhotoCollectionViewController.swift */; };
 		127B350B237FDE1C007C7E8F /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B350A237FDE1C007C7E8F /* PhotoCollectionViewCell.swift */; };
-		127B350D238008E7007C7E8F /* PhotoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B350C238008E7007C7E8F /* PhotoImage.swift */; };
+		127B350D238008E7007C7E8F /* PhotoImageDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B350C238008E7007C7E8F /* PhotoImageDataModel.swift */; };
+		D7267D5860A1024181045017 /* Pods_unsplash_the_kraken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB7A87D442A4CAA232A628E /* Pods_unsplash_the_kraken.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		039A8B61D01AFF9B7814C0C8 /* Pods-unsplash-the-kraken.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unsplash-the-kraken.debug.xcconfig"; path = "Target Support Files/Pods-unsplash-the-kraken/Pods-unsplash-the-kraken.debug.xcconfig"; sourceTree = "<group>"; };
+		1221BD1624DAA89800739A71 /* PhotoCollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionPresenter.swift; sourceTree = "<group>"; };
+		1221BD1824DAA8CF00739A71 /* PhotoImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImageViewModel.swift; sourceTree = "<group>"; };
 		127B34F1237FDA77007C7E8F /* unsplash-the-kraken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unsplash-the-kraken.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		127B34F4237FDA77007C7E8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		127B34F6237FDA77007C7E8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,7 +33,9 @@
 		127B3502237FDA78007C7E8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		127B3508237FDDA5007C7E8F /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		127B350A237FDE1C007C7E8F /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
-		127B350C238008E7007C7E8F /* PhotoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImage.swift; sourceTree = "<group>"; };
+		127B350C238008E7007C7E8F /* PhotoImageDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImageDataModel.swift; sourceTree = "<group>"; };
+		75AF23105FBE97EDE8662B2A /* Pods-unsplash-the-kraken.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unsplash-the-kraken.release.xcconfig"; path = "Target Support Files/Pods-unsplash-the-kraken/Pods-unsplash-the-kraken.release.xcconfig"; sourceTree = "<group>"; };
+		EBB7A87D442A4CAA232A628E /* Pods_unsplash_the_kraken.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_unsplash_the_kraken.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,55 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7267D5860A1024181045017 /* Pods_unsplash_the_kraken.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1221BD1224DAA83D00739A71 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				127B350C238008E7007C7E8F /* PhotoImageDataModel.swift */,
+				1221BD1824DAA8CF00739A71 /* PhotoImageViewModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1221BD1324DAA84800739A71 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1221BD1624DAA89800739A71 /* PhotoCollectionPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		1221BD1424DAA84F00739A71 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				127B350A237FDE1C007C7E8F /* PhotoCollectionViewCell.swift */,
+				127B3508237FDDA5007C7E8F /* PhotoCollectionViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		1221BD1524DAA85900739A71 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				127B34FA237FDA77007C7E8F /* Main.storyboard */,
+				127B34FF237FDA78007C7E8F /* LaunchScreen.storyboard */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
 		127B34E8237FDA77007C7E8F = {
 			isa = PBXGroup;
 			children = (
 				127B34F3237FDA77007C7E8F /* unsplash-the-kraken */,
 				127B34F2237FDA77007C7E8F /* Products */,
+				AAA1683D91FECD6217D54AA1 /* Pods */,
+				71920277AA80432DBA90E01E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,17 +106,33 @@
 		127B34F3237FDA77007C7E8F /* unsplash-the-kraken */ = {
 			isa = PBXGroup;
 			children = (
+				1221BD1524DAA85900739A71 /* ui */,
+				1221BD1424DAA84F00739A71 /* view */,
+				1221BD1324DAA84800739A71 /* presenter */,
+				1221BD1224DAA83D00739A71 /* model */,
 				127B34F4237FDA77007C7E8F /* AppDelegate.swift */,
 				127B34F6237FDA77007C7E8F /* SceneDelegate.swift */,
-				127B34FA237FDA77007C7E8F /* Main.storyboard */,
 				127B34FD237FDA78007C7E8F /* Assets.xcassets */,
-				127B34FF237FDA78007C7E8F /* LaunchScreen.storyboard */,
-				127B350A237FDE1C007C7E8F /* PhotoCollectionViewCell.swift */,
-				127B3508237FDDA5007C7E8F /* PhotoCollectionViewController.swift */,
-				127B350C238008E7007C7E8F /* PhotoImage.swift */,
 				127B3502237FDA78007C7E8F /* Info.plist */,
 			);
 			path = "unsplash-the-kraken";
+			sourceTree = "<group>";
+		};
+		71920277AA80432DBA90E01E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7A87D442A4CAA232A628E /* Pods_unsplash_the_kraken.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAA1683D91FECD6217D54AA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				039A8B61D01AFF9B7814C0C8 /* Pods-unsplash-the-kraken.debug.xcconfig */,
+				75AF23105FBE97EDE8662B2A /* Pods-unsplash-the-kraken.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 127B3505237FDA78007C7E8F /* Build configuration list for PBXNativeTarget "unsplash-the-kraken" */;
 			buildPhases = (
+				3BFBB93612CF512417AD953C /* [CP] Check Pods Manifest.lock */,
 				127B34ED237FDA77007C7E8F /* Sources */,
 				127B34EE237FDA77007C7E8F /* Frameworks */,
 				127B34EF237FDA77007C7E8F /* Resources */,
+				8E3F76B38FEB334163D8AAE9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,16 +203,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3BFBB93612CF512417AD953C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-unsplash-the-kraken-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E3F76B38FEB334163D8AAE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-unsplash-the-kraken/Pods-unsplash-the-kraken-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-unsplash-the-kraken/Pods-unsplash-the-kraken-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-unsplash-the-kraken/Pods-unsplash-the-kraken-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		127B34ED237FDA77007C7E8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				127B34F5237FDA77007C7E8F /* AppDelegate.swift in Sources */,
+				1221BD1924DAA8CF00739A71 /* PhotoImageViewModel.swift in Sources */,
 				127B350B237FDE1C007C7E8F /* PhotoCollectionViewCell.swift in Sources */,
 				127B3509237FDDA5007C7E8F /* PhotoCollectionViewController.swift in Sources */,
-				127B350D238008E7007C7E8F /* PhotoImage.swift in Sources */,
+				127B350D238008E7007C7E8F /* PhotoImageDataModel.swift in Sources */,
 				127B34F7237FDA77007C7E8F /* SceneDelegate.swift in Sources */,
+				1221BD1724DAA89800739A71 /* PhotoCollectionPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +398,7 @@
 		};
 		127B3506237FDA78007C7E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 039A8B61D01AFF9B7814C0C8 /* Pods-unsplash-the-kraken.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +416,7 @@
 		};
 		127B3507237FDA78007C7E8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75AF23105FBE97EDE8662B2A /* Pods-unsplash-the-kraken.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
