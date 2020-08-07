@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121C8C7324DD5BB9004ED8BA /* unsplash_the_krakenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121C8C7224DD5BB9004ED8BA /* unsplash_the_krakenTests.swift */; };
+		121C8C7B24DD8B2E004ED8BA /* MockPhotoCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121C8C7A24DD8B2D004ED8BA /* MockPhotoCollectionPresenter.swift */; };
+		121C8C7D24DD8C81004ED8BA /* MockPhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121C8C7C24DD8C81004ED8BA /* MockPhotoData.swift */; };
 		1221BD1724DAA89800739A71 /* PhotoCollectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1221BD1624DAA89800739A71 /* PhotoCollectionPresenter.swift */; };
 		1221BD1924DAA8CF00739A71 /* PhotoImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1221BD1824DAA8CF00739A71 /* PhotoImageViewModel.swift */; };
 		127B34F5237FDA77007C7E8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B34F4237FDA77007C7E8F /* AppDelegate.swift */; };
@@ -20,8 +23,23 @@
 		D7267D5860A1024181045017 /* Pods_unsplash_the_kraken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB7A87D442A4CAA232A628E /* Pods_unsplash_the_kraken.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		121C8C7524DD5BB9004ED8BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 127B34E9237FDA77007C7E8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 127B34F0237FDA77007C7E8F;
+			remoteInfo = "unsplash-the-kraken";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		039A8B61D01AFF9B7814C0C8 /* Pods-unsplash-the-kraken.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unsplash-the-kraken.debug.xcconfig"; path = "Target Support Files/Pods-unsplash-the-kraken/Pods-unsplash-the-kraken.debug.xcconfig"; sourceTree = "<group>"; };
+		121C8C7024DD5BB9004ED8BA /* unsplash-the-krakenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "unsplash-the-krakenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		121C8C7224DD5BB9004ED8BA /* unsplash_the_krakenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unsplash_the_krakenTests.swift; sourceTree = "<group>"; };
+		121C8C7424DD5BB9004ED8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		121C8C7A24DD8B2D004ED8BA /* MockPhotoCollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPhotoCollectionPresenter.swift; sourceTree = "<group>"; };
+		121C8C7C24DD8C81004ED8BA /* MockPhotoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPhotoData.swift; sourceTree = "<group>"; };
 		1221BD1624DAA89800739A71 /* PhotoCollectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionPresenter.swift; sourceTree = "<group>"; };
 		1221BD1824DAA8CF00739A71 /* PhotoImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoImageViewModel.swift; sourceTree = "<group>"; };
 		127B34F1237FDA77007C7E8F /* unsplash-the-kraken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unsplash-the-kraken.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		121C8C6D24DD5BB9004ED8BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		127B34EE237FDA77007C7E8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,6 +75,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121C8C7124DD5BB9004ED8BA /* unsplash-the-krakenTests */ = {
+			isa = PBXGroup;
+			children = (
+				121C8C7224DD5BB9004ED8BA /* unsplash_the_krakenTests.swift */,
+				121C8C7424DD5BB9004ED8BA /* Info.plist */,
+				121C8C7A24DD8B2D004ED8BA /* MockPhotoCollectionPresenter.swift */,
+				121C8C7C24DD8C81004ED8BA /* MockPhotoData.swift */,
+			);
+			path = "unsplash-the-krakenTests";
+			sourceTree = "<group>";
+		};
 		1221BD1224DAA83D00739A71 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				127B34F3237FDA77007C7E8F /* unsplash-the-kraken */,
+				121C8C7124DD5BB9004ED8BA /* unsplash-the-krakenTests */,
 				127B34F2237FDA77007C7E8F /* Products */,
 				AAA1683D91FECD6217D54AA1 /* Pods */,
 				71920277AA80432DBA90E01E /* Frameworks */,
@@ -99,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				127B34F1237FDA77007C7E8F /* unsplash-the-kraken.app */,
+				121C8C7024DD5BB9004ED8BA /* unsplash-the-krakenTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +176,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		121C8C6F24DD5BB9004ED8BA /* unsplash-the-krakenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 121C8C7924DD5BBA004ED8BA /* Build configuration list for PBXNativeTarget "unsplash-the-krakenTests" */;
+			buildPhases = (
+				121C8C6C24DD5BB9004ED8BA /* Sources */,
+				121C8C6D24DD5BB9004ED8BA /* Frameworks */,
+				121C8C6E24DD5BB9004ED8BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				121C8C7624DD5BB9004ED8BA /* PBXTargetDependency */,
+			);
+			name = "unsplash-the-krakenTests";
+			productName = "unsplash-the-krakenTests";
+			productReference = 121C8C7024DD5BB9004ED8BA /* unsplash-the-krakenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		127B34F0237FDA77007C7E8F /* unsplash-the-kraken */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 127B3505237FDA78007C7E8F /* Build configuration list for PBXNativeTarget "unsplash-the-kraken" */;
@@ -163,10 +219,14 @@
 		127B34E9237FDA77007C7E8F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1120;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Adhika gunadarma";
 				TargetAttributes = {
+					121C8C6F24DD5BB9004ED8BA = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 127B34F0237FDA77007C7E8F;
+					};
 					127B34F0237FDA77007C7E8F = {
 						CreatedOnToolsVersion = 11.2;
 					};
@@ -186,11 +246,19 @@
 			projectRoot = "";
 			targets = (
 				127B34F0237FDA77007C7E8F /* unsplash-the-kraken */,
+				121C8C6F24DD5BB9004ED8BA /* unsplash-the-krakenTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		121C8C6E24DD5BB9004ED8BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		127B34EF237FDA77007C7E8F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +314,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		121C8C6C24DD5BB9004ED8BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				121C8C7D24DD8C81004ED8BA /* MockPhotoData.swift in Sources */,
+				121C8C7324DD5BB9004ED8BA /* unsplash_the_krakenTests.swift in Sources */,
+				121C8C7B24DD8B2E004ED8BA /* MockPhotoCollectionPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		127B34ED237FDA77007C7E8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +339,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		121C8C7624DD5BB9004ED8BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 127B34F0237FDA77007C7E8F /* unsplash-the-kraken */;
+			targetProxy = 121C8C7524DD5BB9004ED8BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		127B34FA237FDA77007C7E8F /* Main.storyboard */ = {
@@ -282,6 +368,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		121C8C7724DD5BB9004ED8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "unsplash-the-krakenTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "adhikagunadarma.example.contactheroku.unsplash-the-krakenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/unsplash-the-kraken.app/unsplash-the-kraken";
+			};
+			name = Debug;
+		};
+		121C8C7824DD5BB9004ED8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "unsplash-the-krakenTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "adhikagunadarma.example.contactheroku.unsplash-the-krakenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/unsplash-the-kraken.app/unsplash-the-kraken";
+			};
+			name = Release;
+		};
 		127B3503237FDA78007C7E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -435,6 +559,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		121C8C7924DD5BBA004ED8BA /* Build configuration list for PBXNativeTarget "unsplash-the-krakenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				121C8C7724DD5BB9004ED8BA /* Debug */,
+				121C8C7824DD5BB9004ED8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		127B34EC237FDA77007C7E8F /* Build configuration list for PBXProject "unsplash-the-kraken" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -15,7 +15,15 @@ class PhotoViewModel{
         self.dataModel = dataModel
     }
     
-    public var getPhoto : String{
+    // get id
+    public var getPhotoId : String{
+        return dataModel.id
+    }
+    
+    // get photo regular
+    public var getPhotoRegular : String{
         return dataModel.urls.regular
     }
+    
+    
 }

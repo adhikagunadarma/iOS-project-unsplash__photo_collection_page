@@ -31,7 +31,7 @@ class PhotoCollectionViewController: UICollectionViewController {
         self.listPhotos = []
         self.collectionView.reloadData()
         self.showSpinner(onView: self.view)
-        self.presenter.getNewPhotos(self.searchTextField.text!)
+        self.presenter.getNewPhotos(self.searchTextField.text!, self.listPhotos)
     }
     
 
@@ -44,15 +44,17 @@ class PhotoCollectionViewController: UICollectionViewController {
         return self.listPhotos.count
     }
     
+    // display cell
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier,
                                                       for: indexPath) as! PhotoCollectionViewCell
         cell.imageView.sd_imageIndicator = SDWebImageActivityIndicator.gray
-        cell.imageView.sd_setImage(with: URL(string: self.listPhotos[indexPath.item].getPhoto), placeholderImage : nil)
+        cell.imageView.sd_setImage(with: URL(string: self.listPhotos[indexPath.item].getPhotoRegular), placeholderImage : nil)
         return cell
     }
      
     
+    //infinte scroll
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if (indexPath.row == self.listPhotos.count - 1 ) { //it's your last cell
             self.showSpinner(onView: self.view)
@@ -62,6 +64,8 @@ class PhotoCollectionViewController: UICollectionViewController {
     
 }
 
+
+// cell layout
 extension PhotoCollectionViewController : UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
@@ -88,12 +92,12 @@ extension PhotoCollectionViewController : UICollectionViewDelegateFlowLayout{
           }
 }
 
-
+// protocl from presenter
 extension PhotoCollectionViewController : PresenterPhotoCollection{
     
     func updateData(_ photos: [PhotoViewModel]) {
         self.removeSpinner()
-        self.listPhotos.append(contentsOf: photos)
+        self.listPhotos = photos
         self.collectionView.reloadData()
         
         

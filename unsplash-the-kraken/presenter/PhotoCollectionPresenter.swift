@@ -15,13 +15,14 @@ protocol PresenterPhotoCollection{
 }
 
 protocol PhotoCollectionToPresenter{
-    func getNewPhotos(_ searchText : String)
+    func getNewPhotos(_ searchText : String, _ listPhoto : [ PhotoViewModel])
     func getMorePhotos()
 }
 
 class PhotoCollectionPresenter {
     private var searchTerm = ""
     private var pageNumber = 1
+    private var listPhotosViewModel = [PhotoViewModel]()
     private let baseURL = "https://api.unsplash.com"
     private let apiKey = "029c013809b5db247d1f7e81d0b52d344b5fd2eb8ce00f376f439519ca909430"
     
@@ -45,11 +46,11 @@ class PhotoCollectionPresenter {
                     return
                 }
                 let photos : [PhotoImage] = photoData.results
-                let photosViewModel : [PhotoViewModel] = photos.map({
+
+                self.listPhotosViewModel.append(contentsOf: photos.map({
                     return PhotoViewModel(dataModel : $0)
-                })
-                
-                self.view?.updateData(photosViewModel)
+                }))
+                self.view?.updateData(self.listPhotosViewModel)
             case .failure(let error):
                 self.view?.showError(error.localizedDescription)
            
@@ -66,8 +67,9 @@ extension PhotoCollectionPresenter : PhotoCollectionToPresenter{
         self.getPhotos()
     }
     
-    func getNewPhotos(_ searchText: String) {
+    func getNewPhotos(_ searchText: String, _ listPhoto : [PhotoViewModel]) {
         // this will reset the page number into the beginning again
+        self.listPhotosViewModel = listPhoto
         self.searchTerm = searchText
         self.pageNumber = 1
         self.getPhotos()
